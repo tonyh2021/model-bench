@@ -3,10 +3,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch
+      - main # 或你默认的分支名
 
 permissions:
-  contents: write # Allow pushing to gh-pages branch
+  contents: write # 允许推送到 gh-pages 分支
 
 jobs:
   build-and-deploy:
@@ -21,13 +21,13 @@ jobs:
         with:
           node-version: 18
 
-      - name: 📦 Install dependencies
-        run: npm ci
+      - name: 📦 Install dependencies (Yarn)
+        run: yarn install --frozen-lockfile
 
       - name: 🔨 Build and Export
         run: |
-          npm run build
-          npm run export
+          yarn build
+          yarn export
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
