@@ -1,0 +1,13 @@
+1:"$Sreact.fragment"
+2:I[6795,["119","static/chunks/119-164cbe09dc0adb1c.js","177","static/chunks/app/layout-e2373482ab8fbdf7.js"],"Toaster"]
+3:I[6213,[],"OutletBoundary"]
+6:I[6213,[],"ViewportBoundary"]
+8:I[6213,[],"MetadataBoundary"]
+a:I[4835,[],""]
+:HL["/model-bench/_next/static/media/e4af272ccee01ff0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/model-bench/_next/static/css/5c74df7c42161632.css","style"]
+0:{"P":null,"b":"od9OTiYXXSaxCKjwJLeqs","p":"/model-bench","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/model-bench/_next/static/css/5c74df7c42161632.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_49eea2","suppressHydrationWarning":true,"children":["$","$L2",null,{}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"mobile-text smooth-scroll mobile-container bg-background min-h-screen px-2 py-2 sm:px-4 sm:py-4 lg:px-6 xl:px-8","children":["$","p",null,{"children":"Hello"}]}],"$undefined",null,["$","$L3",null,{"children":["$L4","$L5",null]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","j2bi21cTyTzbl3QoaYPpv",{"children":[["$","$L6",null,{"children":"$L7"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$L8",null,{"children":"$L9"}]]}],false]],"m":"$undefined","G":["$a","$undefined"],"s":false,"S":true}
+7:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes"}]]
+4:null
+5:null
+9:[["$","title","0",{"children":"CVPR25 MedSegFM"}],["$","meta","1",{"name":"description","content":"Foundation Models for Interactive 3D Biomedical Image Segmentation"}],["$","link","2",{"rel":"icon","href":"images/favicon.ico"}]]
