@@ -7,6 +7,8 @@ const nextConfig = {
   output: "export", // Static export
   images: {
     unoptimized: true, // Disable image optimization for next export
+    loader: "custom",
+    loaderFile: "./image-loader.js",
   },
   trailingSlash: true, // All paths end with /, suitable for static hosting
   basePath: isProd ? `/${repoName}` : "",
