@@ -14,6 +14,7 @@ const nextConfig = {
   basePath: isProd ? `/${repoName}` : "",
   assetPrefix: isProd ? `/${repoName}/` : "",
   env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : "",
     // Optional: Build information (recommended to use scripts or external injection for more accuracy)
     NEXT_PUBLIC_BUILD_DATE: new Date()
       .toISOString()
