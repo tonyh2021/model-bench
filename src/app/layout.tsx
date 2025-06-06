@@ -1,17 +1,14 @@
 import type { Metadata, Viewport } from "next";
+import { EvaluationProvider } from "@/context/EvaluationContext";
 import { Toaster } from "@/components/ui/sonner";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import metaData from "@/data/meta";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CVPR25 MedSegFM",
-  description:
-    "Foundation Models for Interactive 3D Biomedical Image Segmentation",
-  icons: {
-    icon: "images/favicon.ico",
-  },
+  ...metaData,
 };
 
 export const viewport: Viewport = {
@@ -32,7 +29,10 @@ export default function RootLayout({
         className={inter.className}
         suppressHydrationWarning
       >
-        <Toaster />
+        <EvaluationProvider>
+          {children}
+          <Toaster />
+        </EvaluationProvider>
       </body>
     </html>
   );
