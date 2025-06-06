@@ -1,6 +1,6 @@
 {
   "name": "model-bench",
-  "homepage": "https://tonyh2021.github.io/cvpr25",
+  "homepage": "https://tonyh2021.github.io/model-bench",
   "version": "1.0.0",
   "private": true,
   "scripts": {
