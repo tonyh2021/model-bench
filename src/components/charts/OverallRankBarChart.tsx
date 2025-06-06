@@ -713,17 +713,16 @@ export function OverallRankBarChart({
           .filter((p) => {
             if (selectedMetrics.length === 0) {
               // If no metric selected, include all tasks that have any metrics
-              return Object.keys(p.metrics).some(
-                (metric) =>
-                  p.metrics[metric] !== undefined &&
-                  p.metrics[metric] !== null,
+              return (
+                p.metrics !== undefined &&
+                p.metrics !== null
               );
             }
             // If metrics selected, include tasks that have any of the selected metrics
             return selectedMetrics.some(
               (metric) =>
-                p.metrics[metric] !== undefined &&
-                p.metrics[metric] !== null,
+                p.metrics !== undefined &&
+                p.metrics !== null,
             );
           })
           .map((p) => p.taskId),
