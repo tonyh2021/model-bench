@@ -8,10 +8,11 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { performances } from "@/data/performance";
-import { tasks } from "@/data/tasks";
+import { fetchPerformance } from "@/data/performance";
+import { fetchTasks } from "@/data/tasks";
 import type { EChartsOption } from "echarts";
 import { Performance } from "@/types";
+import { useDataType } from "@/hooks/useDataType";
 
 interface DetailedPerformanceChartProps {
   taskId: string;
@@ -312,6 +313,10 @@ export function DetailedPerformanceChart({
   taskName,
   organ,
 }: DetailedPerformanceChartProps) {
+  const dataType = useDataType();
+  const performances = fetchPerformance(dataType);
+  const tasks = fetchTasks(dataType);
+
   // Optimize data processing with better caching
   const cohortCharts = useMemo(() => {
     // Get performances for this specific task - use more efficient filtering

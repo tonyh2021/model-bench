@@ -1,9 +1,11 @@
-import { Task, TaskInfo } from "@/types";
-import { performances } from "./performance";
+import { DataType, Task } from "@/types";
+import { fetchPerformance } from "./performance";
 
 // Extract unique tasks from performance data
-const extractTasksFromPerformance = (): Task[] => {
+export const fetchTasks = (dataType: DataType): Task[] => {
   const taskMap = new Map<string, Task>();
+
+  const performances = fetchPerformance(dataType);
 
   performances.forEach((perf) => {
     taskMap.set(perf.taskId, {
@@ -24,5 +26,3 @@ const extractTasksFromPerformance = (): Task[] => {
 
   return Array.from(taskMap.values());
 };
-
-export const tasks: Task[] = extractTasksFromPerformance();

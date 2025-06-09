@@ -1,11 +1,16 @@
 "use client";
 
-import { Model } from "@/types";
+import { DataType, Model } from "@/types";
 import allModelsData from "./model_all.json";
 import coreSetModelsData from "./model_core.json";
-import { dataType } from "./performance";
 
-export const models: Model[] =
-  dataType === "AllData"
-    ? allModelsData
-    : coreSetModelsData;
+const modelsAll: Model[] = allModelsData;
+const modelsCoreSet: Model[] = coreSetModelsData;
+
+export const fetchModels = (
+  dataType: DataType,
+): Model[] => {
+  return dataType === DataType.AllData
+    ? modelsAll
+    : modelsCoreSet;
+};

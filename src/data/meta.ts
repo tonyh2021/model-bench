@@ -1,6 +1,6 @@
 const metaData = {
-  title:
-    "CVPR25 MedSegFM: Interactive Segmentation-All Data Track",
+  title: "CVPR25 MedSegFM",
+
   description:
     "Foundation Models for Interactive 3D Biomedical Image Segmentation",
   icons: {
@@ -16,6 +16,20 @@ const metaData = {
   },
   github: {
     link: "https://github.com/JunMa11/CVPR-MedSegFMCompetition",
+  },
+  dataType: {
+    core: {
+      titleValue: "Core Set",
+      link: "/?type=core",
+      titleExtra:
+        ": Interactive Segmentation-Core Set Track",
+    },
+    all: {
+      titleValue: "All Data",
+      link: "/?type=all",
+      titleExtra:
+        ": Interactive Segmentation-All Data Track",
+    },
   },
 };
 

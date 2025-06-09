@@ -7,10 +7,17 @@ import React, {
   useCallback,
   useMemo,
 } from "react";
-import { Task, Model, Organ, Performance } from "@/types";
-import { models } from "../data/models";
-import { tasks } from "../data/tasks";
-import { performances } from "../data/performance";
+import {
+  Task,
+  Model,
+  Organ,
+  Performance,
+  DataType,
+} from "@/types";
+import { fetchModels } from "@/data/models";
+import { fetchTasks } from "@/data/tasks";
+import { fetchPerformance } from "@/data/performance";
+import { useDataType } from "@/hooks/useDataType";
 
 interface EvaluationContextType {
   // Raw data
@@ -52,6 +59,10 @@ export function EvaluationProvider({
 }: {
   children: React.ReactNode;
 }) {
+  const dataType = useDataType();
+  const tasks = fetchTasks(dataType);
+  const models = fetchModels(dataType);
+  const performances = fetchPerformance(dataType);
   // State for selections
   const [selectedOrganIds, setSelectedOrganIds] = useState<
     string[]

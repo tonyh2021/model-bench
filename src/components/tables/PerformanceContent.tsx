@@ -18,11 +18,15 @@ import {
 } from "react-icons/fa";
 import { DetailedPerformanceChart } from "../charts/DetailedPerformanceChart";
 import { LazyLoad } from "../ui/LazyLoad";
-import { tasks } from "@/data/tasks";
+import { fetchTasks } from "@/data/tasks";
 import { Task } from "@/types";
-import { models } from "@/data/models";
+import { fetchModels } from "@/data/models";
+import { useDataType } from "@/hooks/useDataType";
 
 export default function PerformanceContent() {
+  const dataType = useDataType();
+  const tasks = fetchTasks(dataType);
+  const models = fetchModels(dataType);
   // Filter states
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedOrgans, setSelectedOrgans] = useState<

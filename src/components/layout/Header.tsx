@@ -3,12 +3,24 @@
 import Image from "next/image";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 import metaData from "@/data/meta";
+import { useDataType } from "@/hooks/useDataType";
+import { DataType } from "@/types";
 
 export default function Header() {
   // Get basePath from environment variable
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
-  const title = metaData.title;
+  const dataType = useDataType();
+  const targetValue =
+    dataType === DataType.CoreSet
+      ? metaData.dataType.all
+      : metaData.dataType.core;
+  const titleExtra =
+    dataType === DataType.CoreSet
+      ? metaData.dataType.core.titleExtra
+      : metaData.dataType.all.titleExtra;
+
+  const title = metaData.title + titleExtra;
   const description = metaData.description;
   const matchIcon = metaData.icons.match.icon;
   const matchLink = metaData.icons.match.link;
@@ -78,10 +90,10 @@ export default function Header() {
         <h1 className="text-left text-3xl font-semibold tracking-tight">
           {title}
           <a
-            href="https://www.google.com"
+            href={targetValue.link}
             className="ml-3 inline-flex items-center gap-1 rounded-md bg-blue-500 px-2 py-0.5 align-middle text-sm font-medium text-white transition-colors hover:bg-blue-400"
           >
-            Core Set
+            {targetValue.titleValue}
             <FaArrowRight className="ml-1 h-3 w-3" />
           </a>
         </h1>

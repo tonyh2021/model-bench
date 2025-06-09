@@ -46,3 +46,8 @@ export interface Performance {
   rankMean: number;
   rank: number;
 }
+
+export enum DataType {
+  AllData = "AllData",
+  CoreSet = "CoreSet",
+}
