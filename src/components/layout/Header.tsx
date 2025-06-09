@@ -47,6 +47,7 @@ export default function Header() {
         <a
           href={githubLink}
           target="_blank"
+          rel="noopener noreferrer"
           className={`bg-white-50 touch-target group h-14 w-14 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
           title="View GitHub Repository"
         >
@@ -58,6 +59,7 @@ export default function Header() {
         <a
           href={matchLink}
           target="_blank"
+          rel="noopener noreferrer"
           className={`bg-white-50 touch-target group relative h-14 w-14 items-center justify-center rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
           title="View GitHub Repository"
         >
@@ -72,6 +74,7 @@ export default function Header() {
         <a
           href={uoftLink}
           target="_blank"
+          rel="noopener noreferrer"
           title="Visit UofT"
           className={`bg-white-50 touch-target group relative h-14 w-[150px] overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-md`}
         >

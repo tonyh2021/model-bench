@@ -1,6 +1,5 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import { useEffect, useRef, useState } from "react";
 
 export function Footer() {
@@ -14,6 +13,9 @@ export function Footer() {
   });
 
   useEffect(() => {
+    console.log(
+      `Last updated: ${buildInfo.buildTimestamp} UTC`,
+    );
     setCurrentYear(new Date().getFullYear().toString());
     if (!buildInfo.buildTimestamp) {
       setBuildInfo({
@@ -69,22 +71,29 @@ export function Footer() {
           className="mt-5 flex items-center justify-center"
         ></div>
 
-        <div className="mt-3 flex justify-center px-4 pb-4 sm:mt-4 sm:pb-6">
+        <div className="mt-3 flex justify-center px-4 pb-1">
           <p
             className="text-center text-xs text-muted-foreground"
             suppressHydrationWarning
           >
             © {currentYear || "2025"} University of Toronto
-            — All Rights Reserved
           </p>
         </div>
 
-        <div className="flex justify-center px-4 pb-3 sm:pb-4">
+        <div className="flex justify-center">
           <p
             className="text-center text-xs text-muted-foreground"
             suppressHydrationWarning
           >
-            Last updated: {buildInfo.buildTimestamp} UTC
+            Inspired by{" "}
+            <a
+              href="https://github.com/birkhoffkiki/PathBench/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              PathBench
+            </a>
           </p>
         </div>
       </div>

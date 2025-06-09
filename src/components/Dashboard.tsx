@@ -21,7 +21,7 @@ import PerformanceContent from "@/components/tables/PerformanceContent";
 import { MetricSelector } from "@/components/selectors/MetricSelector";
 import { Footer } from "@/components/layout/Footer";
 import { LeaderboardTable } from "@/components/tables/LeaderboardTable";
-import Header from "@/components/Header";
+import Header from "@/components/layout/Header";
 
 const TAB_VALUES = {
   OVERVIEW: "overview",
