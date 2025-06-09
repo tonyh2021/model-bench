@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState } from "react";
 import {
   Tabs,
   TabsContent,
@@ -40,24 +40,24 @@ export function Dashboard() {
       <Header />
 
       <Tabs defaultValue={TAB_VALUES.OVERVIEW}>
-        <div className="w-full overflow-x-auto pb-2">
-          <TabsList className="flex w-auto min-w-max space-x-0.5 rounded-xl border border-gray-100 bg-gray-50 p-1 sm:space-x-1 sm:p-1.5">
+        <div className="w-full overflow-x-auto">
+          <TabsList className="flex w-auto min-w-max space-x-0.5 rounded-xl border border-gray-100 bg-gray-50">
             <TabsTrigger
               value={TAB_VALUES.OVERVIEW}
-              className="whitespace-nowrap rounded-lg px-2 py-1.5 text-gray-600 transition-all hover:bg-gray-100/70 data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm sm:px-6 sm:py-2"
+              className="whitespace-nowrap rounded-lg px-2 py-1.5 text-gray-600 transition-all hover:bg-gray-100/70 data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm"
             >
-              <span className="text-xs font-medium sm:text-sm">
+              <span className="text-sm font-medium">
                 Overview
               </span>
             </TabsTrigger>
-            <TabsTrigger
+            {/* <TabsTrigger
               value={TAB_VALUES.OVERVIEW_2}
               className="whitespace-nowrap rounded-lg px-2 py-1.5 text-gray-600 transition-all hover:bg-gray-100/70 data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm sm:px-6 sm:py-2"
             >
               <span className="text-xs font-medium sm:text-sm">
                 Overview
               </span>
-            </TabsTrigger>
+            </TabsTrigger> */}
             {/* <TabsTrigger
               value={TAB_VALUES.LEADERBOARD}
               className="whitespace-nowrap rounded-lg px-2 py-1.5 text-gray-600 transition-all hover:bg-gray-100/70 data-[state=active]:bg-white data-[state=active]:text-gray-900 data-[state=active]:shadow-sm sm:px-6 sm:py-2"
