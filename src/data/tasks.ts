@@ -11,7 +11,7 @@ const extractTasksFromPerformance = (): Task[] => {
       name: perf.taskName,
       organ: perf.organ,
       taskType: perf.taskName,
-      cohort: "perf.cohort",
+      cohort: perf.organ,
       evaluationMetrics: [perf.metrics],
       description: `${perf.taskName} task for ${perf.organ}`,
       info: {

@@ -1,7 +1,12 @@
 "use client";
 
 import { useEvaluation } from "@/context/EvaluationContext";
-import React, { useMemo, useState, useEffect } from "react";
+import React, {
+  useMemo,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 import ReactECharts from "echarts-for-react";
 import {
   Card,
@@ -12,6 +17,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import type { EChartsOption } from "echarts";
+import debounce from "lodash/debounce";
 
 interface PerformanceBarChartProps {
   selectedMetrics?: string[];
@@ -26,20 +32,25 @@ export function OverallRankBarChart({
     getTaskById,
   } = useEvaluation();
 
-  // Mobile responsiveness state
+  // Enhanced responsive states
   const [isMobile, setIsMobile] = useState(false);
+  const [isNarrowScreen, setIsNarrowScreen] =
+    useState(false);
   const [showAllModels, setShowAllModels] = useState(false);
 
   useEffect(() => {
-    const checkScreenSize = () => {
+    const checkScreenSize = debounce(() => {
       const width = window.innerWidth;
       setIsMobile(width < 768);
-    };
+      setIsNarrowScreen(width >= 768 && width < 1024);
+    }, 150);
 
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-    return () =>
+    return () => {
       window.removeEventListener("resize", checkScreenSize);
+      checkScreenSize.cancel();
+    };
   }, []);
 
   const chartOptions = useMemo((): EChartsOption => {
@@ -85,13 +96,15 @@ export function OverallRankBarChart({
 
         return {
           id,
-          name: task ? `${task.name} (${task.cohort})` : id,
+          name: task
+            ? `${task.name}(${task.organ})<br/>${task.evaluationMetrics[0]}`
+            : id,
           availableMetrics: Array.from(availableMetrics),
           task,
         };
       })
       .filter((t) => t.availableMetrics.length > 0)
-      .sort((a, b) => a.name.localeCompare(b.name));
+      .sort((a, b) => b.name.localeCompare(a.name));
 
     // Determine if we should show overall ranking
     const allMetricsArray = Array.from(allAvailableMetrics);
@@ -118,45 +131,56 @@ export function OverallRankBarChart({
     }
 
     // Pre-calculate all model scores for each task to avoid repeated calculations
-    const taskScores = new Map();
-    tasks.forEach((taskInfo) => {
-      const scores = filteredModels
-        .map((m) => {
-          const performance = filteredPerformances.find(
-            (p) =>
-              p.taskId === taskInfo.id &&
-              p.modelId === m.name,
-          );
-          if (!performance) {
-            return { modelName: m.name, score: -Infinity };
-          }
-          return {
-            modelName: m.name,
-            score: performance.rankMean,
-          };
-        })
-        .sort((a, b) => b.score - a.score);
+    const taskRanks = new Map();
+    const performanceMap = new Map();
 
-      taskScores.set(taskInfo.id, scores);
+    // Create a lookup map for performances to avoid repeated find() operations
+    filteredPerformances.forEach((p) => {
+      const key = `${p.taskId}-${p.modelId}`;
+      performanceMap.set(key, p);
+    });
+
+    tasks.forEach((taskInfo) => {
+      const ranks = filteredModels.map((m) => {
+        const key = `${taskInfo.id}-${m.name}`;
+        const performance = performanceMap.get(key);
+
+        return {
+          modelName: m.name,
+          rank: performance?.rank ?? Infinity,
+        };
+      });
+
+      // Only sort if we have valid scores
+      if (ranks.some((r) => r.rank !== Infinity)) {
+        ranks.sort((a, b) => a.rank - b.rank);
+      }
+
+      taskRanks.set(taskInfo.id, ranks);
     });
 
     // Calculate model stats more efficiently
+    const modelRankMap = new Map();
     const allModelStats = filteredModels.map((model) => {
       const rankings: number[] = [];
       let totalRank = 0;
       let validTasks = 0;
 
       tasks.forEach((task) => {
-        const taskPerformances = taskScores.get(task.id);
-        const rank =
-          taskPerformances.findIndex(
-            (p: { modelName: string; score: number }) =>
-              p.modelName === model.name,
-          ) + 1;
+        const taskPerformances = taskRanks.get(task.id);
+        const modelRank = taskPerformances.findIndex(
+          (p: { modelName: string; score: number }) =>
+            p.modelName === model.name,
+        );
+
+        // Cache the rank calculation
+        const rank = modelRank + 1;
+        const key = `${task.id}-${model.name}`;
+        modelRankMap.set(key, rank);
 
         if (
           rank > 0 &&
-          taskPerformances[rank - 1].score !== -Infinity
+          taskPerformances[modelRank].score !== -Infinity
         ) {
           rankings.push(rank);
           totalRank += rank;
@@ -177,6 +201,7 @@ export function OverallRankBarChart({
       };
     });
 
+    // Sort only once after all calculations are done
     allModelStats.sort(
       (a, b) => a.averageRank - b.averageRank,
     );
@@ -258,8 +283,16 @@ export function OverallRankBarChart({
     });
 
     // Fixed heights for consistent display
-    const barChartHeight = isMobile ? 200 : 350;
-    const fixedCellHeight = isMobile ? 25 : 40;
+    const barChartHeight = isMobile
+      ? 200
+      : isNarrowScreen
+        ? 250
+        : 350;
+    const fixedCellHeight = isMobile
+      ? 25
+      : isNarrowScreen
+        ? 30
+        : 40;
     const heatmapHeight = tasks.length * fixedCellHeight;
 
     return {
@@ -274,19 +307,6 @@ export function OverallRankBarChart({
       blendMode: "source-over",
       hoverLayerThreshold: 10,
 
-      title: {
-        text: `Model Rankings (${
-          isOverallMode
-            ? "Overall"
-            : selectedMetrics.join(", ")
-        })`,
-        left: "center",
-        top: isMobile ? "2%" : "1%",
-        textStyle: {
-          fontSize: isMobile ? 14 : 18,
-          fontWeight: "bold",
-        },
-      },
       tooltip: {
         position: "top",
         formatter: (params: any) => {
@@ -331,13 +351,13 @@ export function OverallRankBarChart({
             {
               left: "8%",
               right: "8%",
-              top: 140,
+              top: 100,
               height: barChartHeight,
             },
             {
               left: "8%",
               right: "8%",
-              top: 120 + barChartHeight + 50,
+              top: 100 + barChartHeight + 50,
               height: heatmapHeight,
             },
           ],
@@ -375,7 +395,7 @@ export function OverallRankBarChart({
               axisLabel: {
                 rotate: 45,
                 interval: 0,
-                fontSize: 14,
+                fontSize: isNarrowScreen ? 12 : 14,
                 align: "left",
                 padding: [10, 0, 0, 0],
               },
@@ -444,14 +464,14 @@ export function OverallRankBarChart({
               nameLocation: "middle",
               nameGap: 45,
               nameTextStyle: {
-                fontSize: 16,
+                fontSize: isNarrowScreen ? 14 : 16,
                 fontWeight: "bold",
               },
               inverse: false,
               gridIndex: 0,
               max: yAxisMax,
               axisLabel: {
-                fontSize: 14,
+                fontSize: isNarrowScreen ? 12 : 14,
                 formatter: function (value: number) {
                   const rankValue = yAxisMax - value + 1;
                   return rankValue.toFixed(1);
@@ -470,7 +490,7 @@ export function OverallRankBarChart({
               nameLocation: "middle",
               nameGap: 50,
               nameTextStyle: {
-                fontSize: 16,
+                fontSize: isNarrowScreen ? 14 : 16,
                 fontWeight: "bold",
               },
               data: tasks.map((t) => t.name),
@@ -539,7 +559,7 @@ export function OverallRankBarChart({
             left: "right",
             top: 340,
             textStyle: {
-              fontSize: 12,
+              fontSize: isNarrowScreen ? 12 : 14,
             },
             itemGap: 6,
             itemWidth: 20,
@@ -651,7 +671,7 @@ export function OverallRankBarChart({
                   return `${model.averageRank.toFixed(2)}`;
                 },
                 rotate: 0,
-                fontSize: 12,
+                fontSize: isNarrowScreen ? 12 : 14,
               },
               xAxisIndex: 0,
               yAxisIndex: 0,
@@ -681,7 +701,7 @@ export function OverallRankBarChart({
                       ]
                     )[2],
                   ),
-                fontSize: 12,
+                fontSize: isNarrowScreen ? 12 : 14,
                 fontWeight: "bold",
                 color: "#000",
                 textBorderColor: "rgba(255,255,255,0.5)",
@@ -701,6 +721,7 @@ export function OverallRankBarChart({
     getTaskById,
     selectedMetrics,
     isMobile,
+    isNarrowScreen,
     showAllModels,
   ]);
 
@@ -751,6 +772,16 @@ export function OverallRankBarChart({
 
   // Get total number of models for mobile display
   const totalModels = getFilteredModels().length;
+
+  const handleChartReady = useCallback((chart: any) => {
+    chart.setOption({
+      progressive: 500,
+      progressiveThreshold: 3000,
+      silent: false,
+      blendMode: "source-over",
+      hoverLayerThreshold: 10,
+    });
+  }, []);
 
   return (
     <Card className="w-full overflow-hidden">
@@ -809,7 +840,7 @@ export function OverallRankBarChart({
       <CardContent
         className="overflow-auto p-2 sm:p-6"
         style={{
-          height: isMobile ? "auto" : `calc(100vh - 150px)`,
+          height: isMobile ? "auto" : `calc(100vh)`,
           maxHeight: `${containerHeight}px`,
         }}
       >
@@ -821,11 +852,13 @@ export function OverallRankBarChart({
             minHeight: `${containerHeight - 100}px`,
           }}
           opts={{
-            renderer: "canvas", // Canvas is faster for heatmaps
-            devicePixelRatio: isMobile ? 1 : 2, // Lower pixel ratio on mobile for better performance
+            renderer: "canvas",
+            devicePixelRatio: isMobile ? 1 : 2,
           }}
           notMerge={true}
           lazyUpdate={true}
+          showLoading={false}
+          onChartReady={handleChartReady}
         />
       </CardContent>
     </Card>

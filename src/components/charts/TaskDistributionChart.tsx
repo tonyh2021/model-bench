@@ -1,13 +1,19 @@
 "use client";
 
 import { useEvaluation } from "@/context/EvaluationContext";
-import React, { useMemo, useState, useEffect } from "react";
+import React, {
+  useMemo,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 import ReactECharts from "echarts-for-react";
 import { Card, CardContent } from "@/components/ui/card";
 import type {
   EChartsOption,
   PieSeriesOption,
 } from "echarts";
+import debounce from "lodash/debounce";
 
 interface TaskDistributionChartProps {
   chartType?: "organ" | "taskType";
@@ -21,26 +27,22 @@ export function TaskDistributionChart({
 
   // Use React state for responsive design instead of window object
   const [isMobile, setIsMobile] = useState(false);
-  const [isMediumScreen, setIsMediumScreen] =
-    useState(false);
-  const [isNarrowScreen, setIsNarrowScreen] =
-    useState(false);
   const [isNarrowDesktop, setIsNarrowDesktop] =
     useState(false);
 
   useEffect(() => {
-    const checkScreenSize = () => {
+    const checkScreenSize = debounce(() => {
       const width = window.innerWidth;
       setIsMobile(width < 768);
-      setIsMediumScreen(width >= 768 && width < 1024);
-      setIsNarrowScreen(width >= 768 && width < 1024);
-      setIsNarrowDesktop(width >= 1200 && width < 1600); // 新增：1200-1600px范围
-    };
+      setIsNarrowDesktop(width >= 768 && width < 1600);
+    }, 150);
 
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
-    return () =>
+    return () => {
       window.removeEventListener("resize", checkScreenSize);
+      checkScreenSize.cancel();
+    };
   }, []);
 
   const chartOptions = useMemo((): EChartsOption => {
@@ -80,20 +82,8 @@ export function TaskDistributionChart({
       const pieSeries: PieSeriesOption = {
         name: "Organ Distribution",
         type: "pie",
-        radius: isMobile
-          ? ["35%", "65%"]
-          : isNarrowDesktop
-            ? ["45%", "70%"]
-            : isNarrowScreen
-              ? ["30%", "60%"]
-              : ["45%", "75%"],
-        center: isMobile
-          ? ["70%", "55%"]
-          : isNarrowDesktop
-            ? ["70%", "55%"]
-            : isNarrowScreen
-              ? ["75%", "55%"]
-              : ["65%", "55%"],
+        radius: isMobile ? ["35%", "65%"] : ["40%", "70%"],
+        center: isMobile ? ["70%", "55%"] : ["65%", "55%"],
         avoidLabelOverlap: true,
         itemStyle: {
           borderRadius: 10,
@@ -191,20 +181,8 @@ export function TaskDistributionChart({
       const pieSeries: PieSeriesOption = {
         name: "Task Type Distribution",
         type: "pie",
-        radius: isMobile
-          ? ["35%", "65%"]
-          : isNarrowDesktop
-            ? ["45%", "70%"]
-            : isNarrowScreen
-              ? ["20%", "50%"]
-              : ["45%", "75%"], // Responsive sizes: mobile, narrow desktop, narrow, desktop
-        center: isMobile
-          ? ["70%", "55%"]
-          : isNarrowDesktop
-            ? ["70%", "55%"]
-            : isNarrowScreen
-              ? ["75%", "55%"]
-              : ["70%", "55%"], // Move down and right for better spacing
+        radius: isMobile ? ["35%", "65%"] : ["40%", "70%"],
+        center: isMobile ? ["70%", "55%"] : ["65%", "55%"],
         avoidLabelOverlap: true,
         itemStyle: {
           borderRadius: 10,
@@ -275,9 +253,18 @@ export function TaskDistributionChart({
     allTaskTypes,
     chartType,
     isMobile,
-    isNarrowScreen,
     isNarrowDesktop,
   ]);
+
+  const handleChartReady = useCallback((chart: any) => {
+    chart.setOption({
+      progressive: 500,
+      progressiveThreshold: 3000,
+      silent: false,
+      blendMode: "source-over",
+      hoverLayerThreshold: 10,
+    });
+  }, []);
 
   return (
     <Card className="h-[250px] w-full sm:h-[350px]">
@@ -286,9 +273,13 @@ export function TaskDistributionChart({
           option={chartOptions}
           style={{ height: "100%", width: "100%" }}
           opts={{
-            renderer: "svg",
+            renderer: "canvas",
             devicePixelRatio: isMobile ? 1 : 2,
           }}
+          notMerge={true}
+          lazyUpdate={true}
+          showLoading={false}
+          onChartReady={handleChartReady}
         />
       </CardContent>
     </Card>

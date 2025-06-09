@@ -294,7 +294,7 @@ export default function PerformanceContent() {
             <Card>
               <CardHeader className="pb-2 sm:pb-3">
                 <CardTitle className="text-xs font-medium sm:text-sm">
-                  Filter by Task Type
+                  Filter by Modality Type
                 </CardTitle>
               </CardHeader>
               <CardContent className="max-h-[120px] overflow-y-auto sm:max-h-[180px]">

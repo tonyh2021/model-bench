@@ -11,8 +11,6 @@ import {
 import { ModelFilter } from "@/components/filters/ModelFilter";
 import { TaskTypeFilter } from "@/components/filters/TaskTypeFilter";
 import { OrganFilter } from "@/components/filters/OrganFilter";
-import Image from "next/image";
-import { useEvaluation } from "@/context/EvaluationContext";
 
 import { TaskDistributionChart } from "@/components/charts/TaskDistributionChart";
 import { OverallRankBarChart } from "@/components/charts/OverallRankBarChart";
@@ -23,7 +21,6 @@ import PerformanceContent from "@/components/tables/PerformanceContent";
 import { MetricSelector } from "@/components/selectors/MetricSelector";
 import { Footer } from "@/components/layout/Footer";
 import { LeaderboardTable } from "@/components/tables/LeaderboardTable";
-import { FaGithub } from "react-icons/fa";
 import Header from "@/components/Header";
 
 const TAB_VALUES = {
