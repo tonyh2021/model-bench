@@ -90,7 +90,7 @@ export default function Header() {
         <h1 className="text-left text-3xl font-semibold tracking-tight">
           {title}
           <a
-            href={targetValue.link}
+            href={basePath + targetValue.link}
             className="ml-3 inline-flex items-center gap-1 rounded-md bg-blue-500 px-2 py-0.5 align-middle text-sm font-medium text-white transition-colors hover:bg-blue-400"
           >
             {targetValue.titleValue}
