@@ -6,11 +6,11 @@ const metaData = {
   icons: {
     icon: "images/favicon.ico",
     match: {
-      icon: "images/match_logo_1.jpg",
+      icon: "/images/match_logo_1.jpg",
       link: "https://github.com/JunMa11/CVPR-MedSegFMCompetition",
     },
     uoft: {
-      icon: "images/uoft.jpg",
+      icon: "/images/uoft.jpg",
       link: "https://www.utoronto.ca/",
     },
   },

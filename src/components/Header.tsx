@@ -76,7 +76,7 @@ export default function Header() {
           className={`bg-white-50 touch-target group relative h-14 w-[150px] overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-md`}
         >
           <Image
-            src={getImagePath("/images/uoft.jpg")}
+            src={getImagePath(uoftIcon)}
             alt="uoft logo"
             fill
             className="transition-filter object-contain brightness-95 contrast-125 group-hover:contrast-125"
