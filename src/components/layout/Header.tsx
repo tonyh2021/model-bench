@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaArrowRight } from "react-icons/fa";
 import metaData from "@/data/meta";
 
 export default function Header() {
@@ -25,30 +24,14 @@ export default function Header() {
     return imagePath;
   };
 
-  // Responsive state management for partner icons
-  const [isNarrowDesktop, setIsNarrowDesktop] =
-    useState(false);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      const width = window.innerWidth;
-      setIsNarrowDesktop(width >= 1200 && width < 1600); // 1200-1600px范围
-    };
-
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () =>
-      window.removeEventListener("resize", checkScreenSize);
-  }, []);
-
-  function icons() {
+  const icons = () => {
     return (
       <div className="flex items-center justify-center gap-2">
         <a
           href={githubLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`bg-white-50 touch-target group h-14 w-14 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
+          className={`bg-white-50 touch-target group h-12 w-12 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
           title="View GitHub Repository"
         >
           <FaGithub
@@ -60,7 +43,7 @@ export default function Header() {
           href={matchLink}
           target="_blank"
           rel="noopener noreferrer"
-          className={`bg-white-50 touch-target group relative h-14 w-14 items-center justify-center rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
+          className={`bg-white-50 touch-target group relative h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
           title="View GitHub Repository"
         >
           <Image
@@ -87,37 +70,32 @@ export default function Header() {
         </a>
       </div>
     );
-  }
+  };
+
+  const leftPart = () => {
+    return (
+      <div>
+        <h1 className="text-left text-3xl font-semibold tracking-tight">
+          {title}
+          <a
+            href="https://www.google.com"
+            className="ml-3 inline-flex items-center gap-1 rounded-md bg-blue-500 px-2 py-0.5 align-middle text-sm font-medium text-white transition-colors hover:bg-blue-400"
+          >
+            Core Set
+            <FaArrowRight className="ml-1 h-3 w-3" />
+          </a>
+        </h1>
+        <p className="mt-2 text-left text-sm leading-relaxed text-muted-foreground">
+          {description}
+        </p>
+      </div>
+    );
+  };
 
   return (
     <header className="mb-4 border-b border-gray-100 pb-4 sm:mb-6 sm:pb-6">
-      {/* Mobile layout - stacked vertically */}
-      <div className="flex flex-col gap-3 sm:hidden">
-        <div className="text-center">
-          <div className="mb-2">
-            <h1 className="text-left text-3xl font-semibold tracking-tight">
-              {title}
-            </h1>
-          </div>
-          <p className="text-left text-sm leading-relaxed text-muted-foreground">
-            {description}
-          </p>
-        </div>
-        {icons()}
-      </div>
-
-      {/* Desktop layout - side by side */}
-      <div className="hidden items-center justify-between gap-4 sm:flex">
-        <div>
-          <div className="mb-2">
-            <h1 className="text-left text-3xl font-semibold tracking-tight">
-              {title}
-            </h1>
-          </div>
-          <p className="text-sm leading-tight text-muted-foreground">
-            {description}
-          </p>
-        </div>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        {leftPart()}
         {icons()}
       </div>
     </header>

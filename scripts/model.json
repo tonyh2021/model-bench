@@ -1,6 +1,6 @@
 [
   {
-    "name":"aim_alldata",
+    "name":"ahus_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -13,7 +13,7 @@
     "publication":"-"
   },
   {
-    "name":"hanglok_alldata",
+    "name":"aim_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -26,7 +26,7 @@
     "publication":"-"
   },
   {
-    "name":"medibot_alldata",
+    "name":"cemrg_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -39,7 +39,7 @@
     "publication":"-"
   },
   {
-    "name":"nninteractive_alldata",
+    "name":"dtftech_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -52,7 +52,7 @@
     "publication":"-"
   },
   {
-    "name":"sail_alldata",
+    "name":"hanglok_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -65,7 +65,7 @@
     "publication":"-"
   },
   {
-    "name":"sammed3d_alldata",
+    "name":"lexor_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -78,7 +78,7 @@
     "publication":"-"
   },
   {
-    "name":"segvol_alldata",
+    "name":"norateam_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -91,7 +91,7 @@
     "publication":"-"
   },
   {
-    "name":"sjtu-426lab_alldata",
+    "name":"owwwen_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -104,7 +104,7 @@
     "publication":"-"
   },
   {
-    "name":"vista3d_alldata",
+    "name":"sail_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -117,7 +117,46 @@
     "publication":"-"
   },
   {
-    "name":"yiooo_alldata",
+    "name":"sammed3d_coreset",
+    "citation":"-",
+    "slides":"-",
+    "patches":"-",
+    "parameters":"-",
+    "architecture":"-",
+    "pretraining_strategy":"-",
+    "pretraining_data_source":"-",
+    "stain":"-",
+    "released_date":"-",
+    "publication":"-"
+  },
+  {
+    "name":"segvol_coreset",
+    "citation":"-",
+    "slides":"-",
+    "patches":"-",
+    "parameters":"-",
+    "architecture":"-",
+    "pretraining_strategy":"-",
+    "pretraining_data_source":"-",
+    "stain":"-",
+    "released_date":"-",
+    "publication":"-"
+  },
+  {
+    "name":"vista3d_coreset",
+    "citation":"-",
+    "slides":"-",
+    "patches":"-",
+    "parameters":"-",
+    "architecture":"-",
+    "pretraining_strategy":"-",
+    "pretraining_data_source":"-",
+    "stain":"-",
+    "released_date":"-",
+    "publication":"-"
+  },
+  {
+    "name":"yiooo_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",

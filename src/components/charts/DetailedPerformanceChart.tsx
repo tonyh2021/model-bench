@@ -2,7 +2,12 @@
 
 import React, { useMemo, memo } from "react";
 import ReactECharts from "echarts-for-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { performances } from "@/data/performance";
 import { tasks } from "@/data/tasks";
 import type { EChartsOption } from "echarts";
@@ -56,12 +61,16 @@ const SingleCohortChart = memo(function SingleCohortChart({
       };
     }
 
-    const modelNames = modelStats.map((d) => d?.modelName || "");
+    const modelNames = modelStats.map(
+      (d) => d?.modelName || "",
+    );
     const means = modelStats.map((d) => d?.mean || 0);
     const stds = modelStats.map((d) => d?.std || 0);
 
     // Calculate Y-axis range for better visualization
-    const allValues = means.concat(modelStats.flatMap((d) => d?.values || []));
+    const allValues = means.concat(
+      modelStats.flatMap((d) => d?.values || []),
+    );
     const minValue = Math.min(...allValues);
     const maxValue = Math.max(...allValues);
     const range = maxValue - minValue;
@@ -107,11 +116,11 @@ const SingleCohortChart = memo(function SingleCohortChart({
                   modelData.modelName
                 }</div>
                 <div>Mean: <span style="font-weight: bold;">${modelData.mean.toFixed(
-                  3
+                  3,
                 )}</span></div>
                 <div>Std: ${modelData.std.toFixed(3)}</div>
                 <div>Range: ${modelData.min.toFixed(
-                  3
+                  3,
                 )} - ${modelData.max.toFixed(3)}</div>
                 <div>Folds: ${modelData.values.length}</div>
               `;
@@ -178,8 +187,10 @@ const SingleCohortChart = memo(function SingleCohortChart({
         ...(() => {
           const range = yAxisMax - yAxisMin;
           // For very small ranges, use larger intervals to prevent crowding
-          if (range < 0.05) return { interval: (yAxisMax - yAxisMin) / 2 };
-          if (range < 0.1) return { interval: (yAxisMax - yAxisMin) / 3 };
+          if (range < 0.05)
+            return { interval: (yAxisMax - yAxisMin) / 2 };
+          if (range < 0.1)
+            return { interval: (yAxisMax - yAxisMin) / 3 };
           return {}; // Let ECharts decide for larger ranges
         })(),
         axisLine: {
@@ -264,16 +275,17 @@ const SingleCohortChart = memo(function SingleCohortChart({
   }, [modelStats, selectedMetric, cohort]);
 
   return (
-    <Card className="w-full shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+    <Card className="w-full border border-gray-200 shadow-sm transition-shadow hover:shadow-md">
       <CardHeader className="pb-2 pt-3 sm:pt-4">
-        <CardTitle className="text-base sm:text-lg text-gray-900 leading-tight">
+        <CardTitle className="text-base leading-tight text-gray-900 sm:text-lg">
           {taskName}
         </CardTitle>
-        <p className="text-xs sm:text-sm text-gray-600">
-          {organ} • {modelStats.length} models • {selectedMetric} • {cohort}
+        <p className="text-xs text-gray-600 sm:text-sm">
+          {organ} • {modelStats.length} models •{" "}
+          {selectedMetric} • {cohort}
         </p>
       </CardHeader>
-      <CardContent className="pb-2 pt-2 px-2 sm:px-6">
+      <CardContent className="px-2 pb-2 pt-2 sm:px-6">
         <div className="h-[250px] sm:h-[350px]">
           <ReactECharts
             option={chartOptions}
@@ -281,7 +293,8 @@ const SingleCohortChart = memo(function SingleCohortChart({
             opts={{
               renderer: "canvas", // Canvas is faster for complex charts
               devicePixelRatio:
-                typeof window !== "undefined" && window.innerWidth < 768
+                typeof window !== "undefined" &&
+                window.innerWidth < 768
                   ? 1
                   : 1.5, // Lower pixel ratio on mobile for better performance
             }}
@@ -302,14 +315,18 @@ export function DetailedPerformanceChart({
   // Optimize data processing with better caching
   const cohortCharts = useMemo(() => {
     // Get performances for this specific task - use more efficient filtering
-    const taskPerformances = performances.filter((p) => p.taskId === taskId);
+    const taskPerformances = performances.filter(
+      (p) => p.taskId === taskId,
+    );
 
     if (taskPerformances.length === 0) {
       return [];
     }
 
     // Determine the metric for this task based on available metrics
-    const availableMetrics = Object.keys(taskPerformances[0]?.metrics || {});
+    const availableMetrics = Object.keys(
+      taskPerformances[0]?.metrics || {},
+    );
     const selectedMetric = availableMetrics[0]; // Use the first available metric
 
     if (!selectedMetric) {
@@ -333,7 +350,10 @@ export function DetailedPerformanceChart({
 
     // Create chart data for each cohort with optimized calculations
     const chartDataArray = [];
-    for (const [cohort, cohortPerformances] of cohortGroups.entries()) {
+    for (const [
+      cohort,
+      cohortPerformances,
+    ] of cohortGroups.entries()) {
       // Calculate statistics for each model in this cohort
       const modelStats = cohortPerformances
         .map((perf: Performance) => {
@@ -349,7 +369,7 @@ export function DetailedPerformanceChart({
       // Sort by mean performance (descending)
       modelStats.sort(
         (a: ModelStats | null, b: ModelStats | null) =>
-          (b?.mean || 0) - (a?.mean || 0)
+          (b?.mean || 0) - (a?.mean || 0),
       );
 
       if (modelStats.length > 0) {
@@ -366,12 +386,16 @@ export function DetailedPerformanceChart({
 
   if (cohortCharts.length === 0) {
     return (
-      <Card className="w-full shadow-sm border border-gray-200">
+      <Card className="w-full border border-gray-200 shadow-sm">
         <CardHeader>
-          <CardTitle className="text-lg text-gray-900">{taskName}</CardTitle>
+          <CardTitle className="text-lg text-gray-900">
+            {taskName}
+          </CardTitle>
         </CardHeader>
-        <CardContent className="h-64 flex items-center justify-center">
-          <p className="text-gray-500">No data available for this task</p>
+        <CardContent className="flex h-64 items-center justify-center">
+          <p className="text-gray-500">
+            No data available for this task
+          </p>
         </CardContent>
       </Card>
     );
