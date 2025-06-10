@@ -19,10 +19,10 @@ const metaData = {
   },
   dataType: {
     core: {
-      titleValue: "Core Set",
+      titleValue: "Coreset",
       link: "/?type=core",
       titleExtra:
-        ": Interactive Segmentation-Core Set Track",
+        ": Interactive Segmentation-Coreset Track",
     },
     all: {
       titleValue: "All Data",
