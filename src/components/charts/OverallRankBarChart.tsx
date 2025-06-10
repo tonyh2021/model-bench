@@ -168,20 +168,35 @@ export function OverallRankBarChart({
 
       tasks.forEach((task) => {
         const taskPerformances = taskRanks.get(task.id);
-        const modelRank = taskPerformances.findIndex(
-          (p: { modelName: string; score: number }) =>
-            p.modelName === model.name,
+
+        // Group models by their rank to handle ties
+        const rankGroups = new Map<number, string[]>();
+        taskPerformances.forEach(
+          (p: { modelName: string; rank: number }) => {
+            if (!rankGroups.has(p.rank)) {
+              rankGroups.set(p.rank, []);
+            }
+            rankGroups.get(p.rank)?.push(p.modelName);
+          },
         );
 
-        // Cache the rank calculation
-        const rank = modelRank + 1;
+        // Calculate standard ranking for each group
+        let currentRank = 1;
+        const modelRanks = new Map<string, number>();
+        [...rankGroups.entries()]
+          .sort(([a], [b]) => a - b)
+          .forEach(([_, models]) => {
+            models.forEach((modelName) => {
+              modelRanks.set(modelName, currentRank);
+            });
+            currentRank += models.length;
+          });
+
+        const rank = modelRanks.get(model.name) ?? -1;
         const key = `${task.id}-${model.name}`;
         modelRankMap.set(key, rank);
 
-        if (
-          rank > 0 &&
-          taskPerformances[modelRank].score !== -Infinity
-        ) {
+        if (rank > 0) {
           rankings.push(rank);
           totalRank += rank;
           validTasks += 1;
