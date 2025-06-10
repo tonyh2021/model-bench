@@ -1,6 +1,6 @@
 [
   {
-    "name":"ahus_coreset",
+    "name":"cat_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -13,7 +13,7 @@
     "publication":"-"
   },
   {
-    "name":"aim_coreset",
+    "name":"cvit_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -26,20 +26,7 @@
     "publication":"-"
   },
   {
-    "name":"cemrg_coreset",
-    "citation":"-",
-    "slides":"-",
-    "patches":"-",
-    "parameters":"-",
-    "architecture":"-",
-    "pretraining_strategy":"-",
-    "pretraining_data_source":"-",
-    "stain":"-",
-    "released_date":"-",
-    "publication":"-"
-  },
-  {
-    "name":"dtftech_coreset",
+    "name":"deepseg_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -65,7 +52,7 @@
     "publication":"-"
   },
   {
-    "name":"lexor_coreset",
+    "name":"imiphdu_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -78,7 +65,7 @@
     "publication":"-"
   },
   {
-    "name":"norateam_coreset",
+    "name":"mirthai-lab_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -91,7 +78,7 @@
     "publication":"-"
   },
   {
-    "name":"owwwen_coreset",
+    "name":"sat_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",
@@ -104,59 +91,7 @@
     "publication":"-"
   },
   {
-    "name":"sail_coreset",
-    "citation":"-",
-    "slides":"-",
-    "patches":"-",
-    "parameters":"-",
-    "architecture":"-",
-    "pretraining_strategy":"-",
-    "pretraining_data_source":"-",
-    "stain":"-",
-    "released_date":"-",
-    "publication":"-"
-  },
-  {
-    "name":"sammed3d_coreset",
-    "citation":"-",
-    "slides":"-",
-    "patches":"-",
-    "parameters":"-",
-    "architecture":"-",
-    "pretraining_strategy":"-",
-    "pretraining_data_source":"-",
-    "stain":"-",
-    "released_date":"-",
-    "publication":"-"
-  },
-  {
-    "name":"segvol_coreset",
-    "citation":"-",
-    "slides":"-",
-    "patches":"-",
-    "parameters":"-",
-    "architecture":"-",
-    "pretraining_strategy":"-",
-    "pretraining_data_source":"-",
-    "stain":"-",
-    "released_date":"-",
-    "publication":"-"
-  },
-  {
-    "name":"vista3d_coreset",
-    "citation":"-",
-    "slides":"-",
-    "patches":"-",
-    "parameters":"-",
-    "architecture":"-",
-    "pretraining_strategy":"-",
-    "pretraining_data_source":"-",
-    "stain":"-",
-    "released_date":"-",
-    "publication":"-"
-  },
-  {
-    "name":"yiooo_coreset",
+    "name":"zen_coreset",
     "citation":"-",
     "slides":"-",
     "patches":"-",

@@ -1,42 +1,5042 @@
 [
   {
-    "id": "601010101",
-    "model_id": "aim_alldata",
-    "rank_mean": 2.0434782609,
-    "rank": 2,
-    "organ": "Lung",
-    "metrics": "DSC_AUC",
-    "task_name": "CBCT",
+    "id": "101010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.9333333333,
+    "rank": 3,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
     "data_type": "AllData"
   },
   {
-    "id": "601010102",
-    "model_id": "hanglok_alldata",
-    "rank_mean": 5.1304347826,
-    "rank": 5,
-    "organ": "Lung",
-    "metrics": "DSC_AUC",
-    "task_name": "CBCT",
-    "data_type": "AllData"
-  },
-  {
-    "id": "601030101",
-    "model_id": "aim_alldata",
-    "rank_mean": 2.3043478261,
-    "rank": 2,
-    "organ": "Lung",
-    "metrics": "DSC_Final",
-    "task_name": "CBCT",
-    "data_type": "AllData"
-  },
-  {
-    "id": "601030102",
-    "model_id": "hanglok_alldata",
-    "rank_mean": 4.9130434783,
+    "id": "101010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.3666666667,
     "rank": 4,
-    "organ": "Lung",
-    "metrics": "DSC_Final",
-    "task_name": "CBCT",
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.6833333333,
+    "rank": 5,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.15,
+    "rank": 2,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8666666667,
+    "rank": 1,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 3.1666666667,
+    "rank": 4,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.7333333333,
+    "rank": 3,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.6833333333,
+    "rank": 5,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.0833333333,
+    "rank": 1,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "101020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.3333333333,
+    "rank": 2,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 4.3,
+    "rank": 4,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.9,
+    "rank": 1,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.52,
+    "rank": 5,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.2,
+    "rank": 3,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.08,
+    "rank": 2,
+    "organ": "Aorta",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 3.9,
+    "rank": 4,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.4,
+    "rank": 1,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.98,
+    "rank": 6,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.88,
+    "rank": 5,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.4,
+    "rank": 2,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "102020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.44,
+    "rank": 3,
+    "organ": "Aorta",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.375,
+    "rank": 2,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.475,
+    "rank": 5,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.45,
+    "rank": 3,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.775,
+    "rank": 4,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 4.75,
+    "rank": 6,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.525,
+    "rank": 2,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.6,
+    "rank": 5,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.5,
+    "rank": 3,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.625,
+    "rank": 4,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 4.85,
+    "rank": 6,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "104020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.025,
+    "rank": 1,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.3,
+    "rank": 1,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8833333333,
+    "rank": 5,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.3,
+    "rank": 6,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.8,
+    "rank": 4,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.1166666667,
+    "rank": 2,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9333333333,
+    "rank": 3,
+    "organ": "Colon",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2833333333,
+    "rank": 1,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.9333333333,
+    "rank": 5,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.3333333333,
+    "rank": 6,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.9,
+    "rank": 4,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.15,
+    "rank": 2,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "105020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.85,
+    "rank": 3,
+    "organ": "Colon",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2166666667,
+    "rank": 1,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.9166666667,
+    "rank": 5,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.6333333333,
+    "rank": 6,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.0,
+    "rank": 4,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.8666666667,
+    "rank": 2,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.0,
+    "rank": 3,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.25,
+    "rank": 1,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8666666667,
+    "rank": 5,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.65,
+    "rank": 6,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.0833333333,
+    "rank": 4,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.8666666667,
+    "rank": 2,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "106020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9333333333,
+    "rank": 3,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.9555555556,
+    "rank": 1,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.6666666667,
+    "rank": 5,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.4666666667,
+    "rank": 6,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.0666666667,
+    "rank": 3,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.0666666667,
+    "rank": 2,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.1333333333,
+    "rank": 4,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.1555555556,
+    "rank": 2,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.6,
+    "rank": 5,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.5111111111,
+    "rank": 6,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.2,
+    "rank": 4,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.1111111111,
+    "rank": 1,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "107020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.8666666667,
+    "rank": 3,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1166666667,
+    "rank": 1,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.5833333333,
+    "rank": 5,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.8666666667,
+    "rank": 6,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.75,
+    "rank": 2,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.1666666667,
+    "rank": 4,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9333333333,
+    "rank": 3,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1,
+    "rank": 1,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.7,
+    "rank": 5,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9333333333,
+    "rank": 6,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.6166666667,
+    "rank": 2,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.2,
+    "rank": 4,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "111020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.1166666667,
+    "rank": 3,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.8,
+    "rank": 3,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.9833333333,
+    "rank": 5,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.1333333333,
+    "rank": 6,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.7166666667,
+    "rank": 2,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.6166666667,
+    "rank": 1,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.85,
+    "rank": 4,
+    "organ": "Intestine",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.8833333333,
+    "rank": 3,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.0,
+    "rank": 5,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.2166666667,
+    "rank": 6,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.7166666667,
+    "rank": 2,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.6333333333,
+    "rank": 1,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "114020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9666666667,
+    "rank": 4,
+    "organ": "Intestine",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.05,
+    "rank": 1,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.4,
+    "rank": 5,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.4333333333,
+    "rank": 6,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.6833333333,
+    "rank": 2,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.3333333333,
+    "rank": 4,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.8,
+    "rank": 3,
+    "organ": "LeftAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0333333333,
+    "rank": 1,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.4,
+    "rank": 5,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.4333333333,
+    "rank": 6,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.6833333333,
+    "rank": 2,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.3,
+    "rank": 4,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "116020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.85,
+    "rank": 3,
+    "organ": "LeftAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.1833333333,
+    "rank": 3,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.5166666667,
+    "rank": 5,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.8666666667,
+    "rank": 6,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.25,
+    "rank": 4,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.15,
+    "rank": 2,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.9,
+    "rank": 1,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.7166666667,
+    "rank": 1,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.4833333333,
+    "rank": 5,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.8666666667,
+    "rank": 6,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.3166666667,
+    "rank": 4,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.2,
+    "rank": 2,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "117020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.2833333333,
+    "rank": 3,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.8333333333,
+    "rank": 3,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.2333333333,
+    "rank": 4,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.95,
+    "rank": 5,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.4,
+    "rank": 1,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.55,
+    "rank": 2,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.2833333333,
+    "rank": 2,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.3166666667,
+    "rank": 4,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.9666666667,
+    "rank": 5,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.6166666667,
+    "rank": 1,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "118020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.8166666667,
+    "rank": 3,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.4225352113,
+    "rank": 3,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.9295774648,
+    "rank": 4,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.1408450704,
+    "rank": 5,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.5352112676,
+    "rank": 1,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.1971830986,
+    "rank": 2,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 4.1408450704,
+    "rank": 5,
+    "organ": "LiverPortalVein",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.0845070423,
+    "rank": 2,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.0,
+    "rank": 4,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.2816901408,
+    "rank": 5,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.7746478873,
+    "rank": 1,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.2957746479,
+    "rank": 3,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "120020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 4.3098591549,
+    "rank": 6,
+    "organ": "LiverPortalVein",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.175,
+    "rank": 1,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8583333333,
+    "rank": 5,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.5416666667,
+    "rank": 6,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.3083333333,
+    "rank": 4,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.9416666667,
+    "rank": 3,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.7083333333,
+    "rank": 2,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1416666667,
+    "rank": 1,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8416666667,
+    "rank": 5,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.55,
+    "rank": 6,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.4,
+    "rank": 4,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.95,
+    "rank": 3,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "121020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.6583333333,
+    "rank": 2,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 3.2,
+    "rank": 3,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.0166666667,
+    "rank": 4,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.35,
+    "rank": 5,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.35,
+    "rank": 1,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.0666666667,
+    "rank": 2,
+    "organ": "Postcava",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 3.05,
+    "rank": 3,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.8166666667,
+    "rank": 4,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.6166666667,
+    "rank": 5,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.4166666667,
+    "rank": 1,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "122020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.1,
+    "rank": 2,
+    "organ": "Postcava",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.35,
+    "rank": 1,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8166666667,
+    "rank": 5,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9833333333,
+    "rank": 6,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.3166666667,
+    "rank": 2,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.7,
+    "rank": 3,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.6666666667,
+    "rank": 4,
+    "organ": "RightAdrenalGland",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2166666667,
+    "rank": 1,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.7833333333,
+    "rank": 5,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9833333333,
+    "rank": 6,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.4,
+    "rank": 2,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.7666666667,
+    "rank": 3,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "124020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.6833333333,
+    "rank": 4,
+    "organ": "RightAdrenalGland",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.3833333333,
+    "rank": 2,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.9833333333,
+    "rank": 5,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9333333333,
+    "rank": 6,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.9666666667,
+    "rank": 4,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.7,
+    "rank": 1,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9666666667,
+    "rank": 3,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.8166666667,
+    "rank": 1,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.9666666667,
+    "rank": 4,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9333333333,
+    "rank": 6,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.1333333333,
+    "rank": 5,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.9666666667,
+    "rank": 2,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "125020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.1166666667,
+    "rank": 3,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.9166666667,
+    "rank": 3,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.4666666667,
+    "rank": 4,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9666666667,
+    "rank": 6,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.3333333333,
+    "rank": 5,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.5166666667,
+    "rank": 1,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.7333333333,
+    "rank": 2,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.4833333333,
+    "rank": 2,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.4666666667,
+    "rank": 4,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9666666667,
+    "rank": 6,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.55,
+    "rank": 5,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.6333333333,
+    "rank": 1,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "126020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.8666666667,
+    "rank": 3,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.3,
+    "rank": 1,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.9666666667,
+    "rank": 4,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9833333333,
+    "rank": 6,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.1333333333,
+    "rank": 5,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.2666666667,
+    "rank": 2,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.3333333333,
+    "rank": 3,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.3333333333,
+    "rank": 1,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.8333333333,
+    "rank": 4,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9833333333,
+    "rank": 6,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.4,
+    "rank": 5,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.2333333333,
+    "rank": 2,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "127020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.2,
+    "rank": 3,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.75,
+    "rank": 2,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.15,
+    "rank": 4,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.2666666667,
+    "rank": 5,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.4833333333,
+    "rank": 1,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.9333333333,
+    "rank": 3,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.3666666667,
+    "rank": 6,
+    "organ": "Veins",
+    "metrics": "DSC",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.3,
+    "rank": 3,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.5,
+    "rank": 4,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.85,
+    "rank": 5,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.6666666667,
+    "rank": 1,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.0166666667,
+    "rank": 2,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "129020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.95,
+    "rank": 6,
+    "organ": "Veins",
+    "metrics": "NSD",
+    "task_name": "CT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 4.0,
+    "rank": 5,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.8,
+    "rank": 3,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.7,
+    "rank": 6,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.85,
+    "rank": 4,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.5,
+    "rank": 1,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.85,
+    "rank": 2,
+    "organ": "cfos",
+    "metrics": "DSC_TP",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.6,
+    "rank": 3,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.9,
+    "rank": 5,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.7,
+    "rank": 6,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.0,
+    "rank": 4,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.35,
+    "rank": 2,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "531030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.15,
+    "rank": 1,
+    "organ": "cfos",
+    "metrics": "F1",
+    "task_name": "Microscopy",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.7666666667,
+    "rank": 3,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.2833333333,
+    "rank": 4,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9333333333,
+    "rank": 6,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.6333333333,
+    "rank": 5,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.7833333333,
+    "rank": 2,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.4833333333,
+    "rank": 1,
+    "organ": "CeliacTrunk",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.45,
+    "rank": 3,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.2333333333,
+    "rank": 4,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.95,
+    "rank": 6,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.65,
+    "rank": 5,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.75,
+    "rank": 1,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "201020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8833333333,
+    "rank": 2,
+    "organ": "CeliacTrunk",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.4038461538,
+    "rank": 2,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.6653846154,
+    "rank": 3,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.2153846154,
+    "rank": 1,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.35,
+    "rank": 2,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.6230769231,
+    "rank": 3,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.2846153846,
+    "rank": 1,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "203030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8,
+    "rank": 4,
+    "organ": "BrainLesion",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.025,
+    "rank": 2,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.1,
+    "rank": 6,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.85,
+    "rank": 4,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.35,
+    "rank": 3,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.975,
+    "rank": 5,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "BrainVessel",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.8,
+    "rank": 2,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.55,
+    "rank": 6,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.25,
+    "rank": 4,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.175,
+    "rank": 3,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 4.275,
+    "rank": 5,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "204020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.25,
+    "rank": 1,
+    "organ": "BrainVessel",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0166666667,
+    "rank": 1,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8833333333,
+    "rank": 5,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9,
+    "rank": 6,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.3833333333,
+    "rank": 4,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.0833333333,
+    "rank": 3,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.5166666667,
+    "rank": 2,
+    "organ": "Duodenum",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.9,
+    "rank": 5,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9666666667,
+    "rank": 6,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.3666666667,
+    "rank": 4,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.2666666667,
+    "rank": 3,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "206020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.3666666667,
+    "rank": 2,
+    "organ": "Duodenum",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0508474576,
+    "rank": 1,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.5423728814,
+    "rank": 5,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.8474576271,
+    "rank": 6,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.1186440678,
+    "rank": 4,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.9152542373,
+    "rank": 2,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9830508475,
+    "rank": 3,
+    "organ": "Esophagus",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0847457627,
+    "rank": 1,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.5423728814,
+    "rank": 5,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9661016949,
+    "rank": 6,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.2711864407,
+    "rank": 4,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.1186440678,
+    "rank": 3,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "207020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.7118644068,
+    "rank": 2,
+    "organ": "Esophagus",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0763888889,
+    "rank": 1,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.125,
+    "rank": 3,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.1458333333,
+    "rank": 6,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.1319444444,
+    "rank": 5,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.125,
+    "rank": 3,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.7152777778,
+    "rank": 2,
+    "organ": "FullVert",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1388888889,
+    "rank": 1,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.1180555556,
+    "rank": 3,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.1458333333,
+    "rank": 6,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.1319444444,
+    "rank": 5,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.125,
+    "rank": 4,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "208030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.6458333333,
+    "rank": 2,
+    "organ": "FullVert",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0701754386,
+    "rank": 1,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.0526315789,
+    "rank": 5,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.1052631579,
+    "rank": 6,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.5789473684,
+    "rank": 3,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.7543859649,
+    "rank": 4,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.5263157895,
+    "rank": 2,
+    "organ": "Gallbladder",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1052631579,
+    "rank": 1,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.1578947368,
+    "rank": 5,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.1929824561,
+    "rank": 6,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.4210526316,
+    "rank": 2,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.8947368421,
+    "rank": 4,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "211020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.6315789474,
+    "rank": 3,
+    "organ": "Gallbladder",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.6333333333,
+    "rank": 2,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.6777777778,
+    "rank": 3,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.9555555556,
+    "rank": 5,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.7333333333,
+    "rank": 4,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.3888888889,
+    "rank": 1,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9777777778,
+    "rank": 6,
+    "organ": "GTVn",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.5444444444,
+    "rank": 1,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.6111111111,
+    "rank": 3,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.9666666667,
+    "rank": 5,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.6111111111,
+    "rank": 3,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.5555555556,
+    "rank": 2,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "209030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.9777777778,
+    "rank": 6,
+    "organ": "GTVn",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2804878049,
+    "rank": 1,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.1219512195,
+    "rank": 4,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.1219512195,
+    "rank": 4,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.9390243902,
+    "rank": 3,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.4390243902,
+    "rank": 2,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.1463414634,
+    "rank": 6,
+    "organ": "GTVp",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.3292682927,
+    "rank": 1,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.1097560976,
+    "rank": 4,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.1097560976,
+    "rank": 4,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.8170731707,
+    "rank": 3,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.4390243902,
+    "rank": 2,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "210030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.1463414634,
+    "rank": 6,
+    "organ": "GTVp",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.6666666667,
+    "rank": 1,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.2833333333,
+    "rank": 4,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.85,
+    "rank": 6,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.4166666667,
+    "rank": 5,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.45,
+    "rank": 3,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.1666666667,
+    "rank": 2,
+    "organ": "IVC",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.45,
+    "rank": 1,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.2833333333,
+    "rank": 4,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.85,
+    "rank": 6,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.4666666667,
+    "rank": 5,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.45,
+    "rank": 3,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "212020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.3333333333,
+    "rank": 2,
+    "organ": "IVC",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2083333333,
+    "rank": 1,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.4583333333,
+    "rank": 5,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.4583333333,
+    "rank": 5,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.2152777778,
+    "rank": 3,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.4375,
+    "rank": 4,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8333333333,
+    "rank": 2,
+    "organ": "IVD",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1111111111,
+    "rank": 1,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.4583333333,
+    "rank": 5,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.4583333333,
+    "rank": 5,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.2708333333,
+    "rank": 3,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.4513888889,
+    "rank": 4,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "213030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8402777778,
+    "rank": 2,
+    "organ": "IVD",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.2931034483,
+    "rank": 5,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.2931034483,
+    "rank": 5,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.5,
+    "rank": 3,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.2413793103,
+    "rank": 4,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.3275862069,
+    "rank": 2,
+    "organ": "LAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.3793103448,
+    "rank": 6,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.3620689655,
+    "rank": 5,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.5517241379,
+    "rank": 3,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.3103448276,
+    "rank": 4,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "215020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.2931034483,
+    "rank": 2,
+    "organ": "LAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.9833333333,
+    "rank": 1,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8833333333,
+    "rank": 5,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.4166666667,
+    "rank": 6,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.4833333333,
+    "rank": 4,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.3833333333,
+    "rank": 3,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.2333333333,
+    "rank": 2,
+    "organ": "LeftKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.6666666667,
+    "rank": 1,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8666666667,
+    "rank": 5,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.4166666667,
+    "rank": 6,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.4333333333,
+    "rank": 4,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.5666666667,
+    "rank": 3,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "217020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.4333333333,
+    "rank": 2,
+    "organ": "LeftKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.7166666667,
+    "rank": 3,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.5333333333,
+    "rank": 4,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.7,
+    "rank": 5,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.4833333333,
+    "rank": 2,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.5,
+    "rank": 1,
+    "organ": "Liver",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.8,
+    "rank": 1,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.6833333333,
+    "rank": 4,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 6.0,
+    "rank": 6,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 4.6833333333,
+    "rank": 5,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.8333333333,
+    "rank": 3,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "218020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.0,
+    "rank": 2,
+    "organ": "Liver",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0166666667,
+    "rank": 1,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8666666667,
+    "rank": 5,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9666666667,
+    "rank": 6,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.8333333333,
+    "rank": 3,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.6833333333,
+    "rank": 4,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.4833333333,
+    "rank": 2,
+    "organ": "Pancreas",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0166666667,
+    "rank": 1,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.8833333333,
+    "rank": 5,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.9666666667,
+    "rank": 6,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.95,
+    "rank": 3,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.65,
+    "rank": 4,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "221020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.4,
+    "rank": 2,
+    "organ": "Pancreas",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.16,
+    "rank": 4,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.18,
+    "rank": 6,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.28,
+    "rank": 2,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.16,
+    "rank": 4,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.48,
+    "rank": 3,
+    "organ": "RAG",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.3,
+    "rank": 5,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 3.32,
+    "rank": 6,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.36,
+    "rank": 2,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.28,
+    "rank": 4,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "223020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.52,
+    "rank": 3,
+    "organ": "RAG",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.25,
+    "rank": 1,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.6,
+    "rank": 5,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.7666666667,
+    "rank": 6,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.3166666667,
+    "rank": 4,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.85,
+    "rank": 2,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.95,
+    "rank": 3,
+    "organ": "RightKidney",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1833333333,
+    "rank": 1,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.6,
+    "rank": 5,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.7666666667,
+    "rank": 6,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.3333333333,
+    "rank": 4,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.9833333333,
+    "rank": 3,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "225020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.8666666667,
+    "rank": 2,
+    "organ": "RightKidney",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.05,
+    "rank": 2,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.2666666667,
+    "rank": 5,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9333333333,
+    "rank": 6,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.8833333333,
+    "rank": 4,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.3333333333,
+    "rank": 3,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.45,
+    "rank": 1,
+    "organ": "Spleen",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.6,
+    "rank": 1,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.15,
+    "rank": 5,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.9333333333,
+    "rank": 6,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.9833333333,
+    "rank": 4,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 3.45,
+    "rank": 3,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "226020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8166666667,
+    "rank": 2,
+    "organ": "Spleen",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010102",
+    "model_id": "cat_alldata",
+    "rank_mean": 5.0508474576,
+    "rank": 5,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.3220338983,
+    "rank": 6,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.9661016949,
+    "rank": 3,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.8983050847,
+    "rank": 2,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227010106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.2203389831,
+    "rank": 4,
+    "organ": "Stomach",
+    "metrics": "DSC",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.0,
+    "rank": 1,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020102",
+    "model_id": "cat_alldata",
+    "rank_mean": 5.1016949153,
+    "rank": 5,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 5.2881355932,
+    "rank": 6,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.1525423729,
+    "rank": 4,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.8813559322,
+    "rank": 2,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "227020106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 3.0677966102,
+    "rank": 3,
+    "organ": "Stomach",
+    "metrics": "NSD",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 3.0701754386,
+    "rank": 3,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 4.0701754386,
+    "rank": 5,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.7543859649,
+    "rank": 6,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 3.298245614,
+    "rank": 4,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.5964912281,
+    "rank": 1,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.9473684211,
+    "rank": 2,
+    "organ": "Stroke",
+    "metrics": "DSC_TP",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.1929824561,
+    "rank": 2,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 3.8771929825,
+    "rank": 5,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 4.7543859649,
+    "rank": 6,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.9298245614,
+    "rank": 4,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 2.701754386,
+    "rank": 3,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "228030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.298245614,
+    "rank": 1,
+    "organ": "Stroke",
+    "metrics": "F1",
+    "task_name": "MR",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 2.0166666667,
+    "rank": 2,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.6833333333,
+    "rank": 6,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.3666666667,
+    "rank": 5,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.3,
+    "rank": 4,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.6333333333,
+    "rank": 1,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 2.0333333333,
+    "rank": 3,
+    "organ": "LiverLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.9166666667,
+    "rank": 3,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 2.6666666667,
+    "rank": 6,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 2.3833333333,
+    "rank": 5,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 2.2666666667,
+    "rank": 4,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.8833333333,
+    "rank": 2,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "319030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.8166666667,
+    "rank": 1,
+    "organ": "LiverLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.2105263158,
+    "rank": 5,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.1842105263,
+    "rank": 3,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 1.2105263158,
+    "rank": 5,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.1842105263,
+    "rank": 3,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.1052631579,
+    "rank": 1,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330040106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.1052631579,
+    "rank": 1,
+    "organ": "WholeBodyLesion",
+    "metrics": "DSC_TP",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030101",
+    "model_id": "biomedparse_alldata",
+    "rank_mean": 1.1315789474,
+    "rank": 3,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030102",
+    "model_id": "cat_alldata",
+    "rank_mean": 1.1842105263,
+    "rank": 4,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030103",
+    "model_id": "deepseg_alldata",
+    "rank_mean": 1.2105263158,
+    "rank": 5,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030104",
+    "model_id": "mirthai-lab_alldata",
+    "rank_mean": 1.2105263158,
+    "rank": 5,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030105",
+    "model_id": "sat_alldata",
+    "rank_mean": 1.0789473684,
+    "rank": 1,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
+    "data_type": "AllData"
+  },
+  {
+    "id": "330030106",
+    "model_id": "teamx_alldata",
+    "rank_mean": 1.1052631579,
+    "rank": 2,
+    "organ": "WholeBodyLesion",
+    "metrics": "F1",
+    "task_name": "PET",
     "data_type": "AllData"
   }
 ]
