@@ -1,0 +1,42 @@
+[
+  {
+    "id": "601010101",
+    "model_id": "aim_alldata",
+    "rank_mean": 2.0434782609,
+    "rank": 2,
+    "organ": "Lung",
+    "metrics": "DSC_AUC",
+    "task_name": "CBCT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "601010102",
+    "model_id": "hanglok_alldata",
+    "rank_mean": 5.1304347826,
+    "rank": 5,
+    "organ": "Lung",
+    "metrics": "DSC_AUC",
+    "task_name": "CBCT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "601030101",
+    "model_id": "aim_alldata",
+    "rank_mean": 2.3043478261,
+    "rank": 2,
+    "organ": "Lung",
+    "metrics": "DSC_Final",
+    "task_name": "CBCT",
+    "data_type": "AllData"
+  },
+  {
+    "id": "601030102",
+    "model_id": "hanglok_alldata",
+    "rank_mean": 4.9130434783,
+    "rank": 4,
+    "organ": "Lung",
+    "metrics": "DSC_Final",
+    "task_name": "CBCT",
+    "data_type": "AllData"
+  }
+]

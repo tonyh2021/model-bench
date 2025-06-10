@@ -1,11 +1,17 @@
-import { DataType, Task } from "@/types";
+import { CompetitionType, DataType, Task } from "@/types";
 import { fetchPerformance } from "./performance";
 
 // Extract unique tasks from performance data
-export const fetchTasks = (dataType: DataType): Task[] => {
+export const fetchTasks = (
+  dataType: DataType,
+  competition: CompetitionType,
+): Task[] => {
   const taskMap = new Map<string, Task>();
 
-  const performances = fetchPerformance(dataType);
+  const performances = fetchPerformance(
+    dataType,
+    competition,
+  );
 
   performances.forEach((perf) => {
     taskMap.set(perf.taskId, {

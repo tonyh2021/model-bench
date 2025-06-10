@@ -22,11 +22,13 @@ import { fetchTasks } from "@/data/tasks";
 import { Task } from "@/types";
 import { fetchModels } from "@/data/models";
 import { useDataType } from "@/hooks/useDataType";
+import { useCompetition } from "@/hooks/useCompetition";
 
 export default function PerformanceContent() {
   const dataType = useDataType();
-  const tasks = fetchTasks(dataType);
-  const models = fetchModels(dataType);
+  const competition = useCompetition();
+  const tasks = fetchTasks(dataType, competition);
+  const models = fetchModels(dataType, competition);
   // Filter states
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedOrgans, setSelectedOrgans] = useState<

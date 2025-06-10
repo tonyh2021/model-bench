@@ -13,6 +13,7 @@ import { fetchTasks } from "@/data/tasks";
 import type { EChartsOption } from "echarts";
 import { Performance } from "@/types";
 import { useDataType } from "@/hooks/useDataType";
+import { useCompetition } from "@/hooks/useCompetition";
 
 interface DetailedPerformanceChartProps {
   taskId: string;
@@ -314,8 +315,12 @@ export function DetailedPerformanceChart({
   organ,
 }: DetailedPerformanceChartProps) {
   const dataType = useDataType();
-  const performances = fetchPerformance(dataType);
-  const tasks = fetchTasks(dataType);
+  const competition = useCompetition();
+  const performances = fetchPerformance(
+    dataType,
+    competition,
+  );
+  const tasks = fetchTasks(dataType, competition);
 
   // Optimize data processing with better caching
   const cohortCharts = useMemo(() => {

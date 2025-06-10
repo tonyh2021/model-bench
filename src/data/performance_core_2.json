@@ -1,0 +1,22 @@
+[
+  {
+    "id": "601010201",
+    "model_id": "ahus_coreset",
+    "rank_mean": 7.2173913043,
+    "rank": 7,
+    "organ": "Lung",
+    "metrics": "DSC_AUC",
+    "task_name": "CBCT",
+    "data_type": "CoreSet"
+  },
+  {
+    "id": "601030201",
+    "model_id": "ahus_coreset",
+    "rank_mean": 7.652173913,
+    "rank": 8,
+    "organ": "Lung",
+    "metrics": "DSC_Final",
+    "task_name": "CBCT",
+    "data_type": "CoreSet"
+  }
+]

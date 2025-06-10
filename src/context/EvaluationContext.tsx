@@ -18,6 +18,7 @@ import { fetchModels } from "@/data/models";
 import { fetchTasks } from "@/data/tasks";
 import { fetchPerformance } from "@/data/performance";
 import { useDataType } from "@/hooks/useDataType";
+import { useCompetition } from "@/hooks/useCompetition";
 
 interface EvaluationContextType {
   // Raw data
@@ -60,9 +61,13 @@ export function EvaluationProvider({
   children: React.ReactNode;
 }) {
   const dataType = useDataType();
-  const tasks = fetchTasks(dataType);
-  const models = fetchModels(dataType);
-  const performances = fetchPerformance(dataType);
+  const competition = useCompetition();
+  const tasks = fetchTasks(dataType, competition);
+  const models = fetchModels(dataType, competition);
+  const performances = fetchPerformance(
+    dataType,
+    competition,
+  );
   // State for selections
   const [selectedOrganIds, setSelectedOrganIds] = useState<
     string[]
