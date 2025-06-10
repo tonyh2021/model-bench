@@ -1,4 +1,4 @@
-This project is designed to display rankings for [CVPR25 MedSegFM](https://www.codabench.org/competitions/5263/). Inspired by [PathBench](https://github.com/birkhoffkiki/PathBench).
+This project is designed to [display rankings](https://tonyh2021.github.io/model-bench) for [CVPR25 MedSegFM(Interactive)](https://www.codabench.org/competitions/5263/) and [CVPR25 MedSegFM(Text-guided)](https://www.codabench.org/competitions/5651/). Inspired by [PathBench](https://github.com/birkhoffkiki/PathBench).
 
 ## Data Preparation
 

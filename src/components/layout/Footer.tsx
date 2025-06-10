@@ -85,6 +85,14 @@ export function Footer() {
             className="text-center text-xs text-muted-foreground"
             suppressHydrationWarning
           >
+            <a
+              href="https://github.com/tonyh2021/model-bench"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 hover:underline"
+            >
+              Model-Bench&nbsp;·&nbsp;
+            </a>
             Inspired by{" "}
             <a
               href="https://github.com/birkhoffkiki/PathBench/"
