@@ -4,26 +4,58 @@ import Image from "next/image";
 import { FaGithub, FaArrowRight } from "react-icons/fa";
 import metaData from "@/data/meta";
 import { useDataType } from "@/hooks/useDataType";
-import { DataType } from "@/types";
+import { CompetitionType, DataType } from "@/types";
+import { useCompetition } from "@/hooks/useCompetition";
 
 export default function Header() {
   // Get basePath from environment variable
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
   const dataType = useDataType();
-  const targetValue =
+  const competition = useCompetition();
+
+  const competitionTitle =
+    competition === CompetitionType.Interactive
+      ? metaData.competitionType.Interactive.titleValue
+      : metaData.competitionType.TextGuided.titleValue;
+  const dataTypeTitle =
     dataType === DataType.CoreSet
-      ? metaData.dataType.all
-      : metaData.dataType.core;
-  const titleExtra =
+      ? metaData.dataType.core.titleValue
+      : metaData.dataType.all.titleValue;
+  const titleExtra = `: ${competitionTitle} Segmentation-${dataTypeTitle} Track`;
+
+  // DataTypeLink: current competition param but opposite dataType
+  const targetDataTypeTitle =
     dataType === DataType.CoreSet
-      ? metaData.dataType.core.titleExtra
-      : metaData.dataType.all.titleExtra;
+      ? metaData.dataType.all.titleValue
+      : metaData.dataType.core.titleValue;
+  const targetDataTypeLink = `?${
+    competition === CompetitionType.Interactive
+      ? metaData.competitionType.Interactive.link
+      : metaData.competitionType.TextGuided.link
+  }&${
+    dataType === DataType.CoreSet
+      ? metaData.dataType.all.link
+      : metaData.dataType.core.link
+  }`;
+
+  // CompetitionLink: current dataType param but opposite competition
+  const targetCompetitionLink = `?${
+    competition === CompetitionType.Interactive
+      ? metaData.competitionType.TextGuided.link
+      : metaData.competitionType.Interactive.link
+  }&${
+    dataType === DataType.CoreSet
+      ? metaData.dataType.core.link
+      : metaData.dataType.all.link
+  }`;
 
   const title = metaData.title + titleExtra;
   const description = metaData.description;
   const matchIcon = metaData.icons.match.icon;
   const matchLink = metaData.icons.match.link;
+  const match2Icon = metaData.icons.match2.icon;
+  const match2Link = metaData.icons.match2.link;
   const githubLink = metaData.github.link;
   const uoftIcon = metaData.icons.uoft.icon;
   const uoftLink = metaData.icons.uoft.link;
@@ -52,15 +84,44 @@ export default function Header() {
         </a>
 
         <a
-          href={matchLink}
-          target="_blank"
+          href={
+            competition === CompetitionType.Interactive
+              ? matchLink
+              : targetCompetitionLink
+          }
+          target={
+            competition === CompetitionType.Interactive
+              ? "_blank"
+              : ""
+          }
           rel="noopener noreferrer"
           className={`bg-white-50 touch-target group relative h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
-          title="View GitHub Repository"
         >
           <Image
             src={getImagePath(matchIcon)}
-            alt="match icon"
+            alt="competition icon"
+            fill
+            className="transition-filter rounded-full object-cover brightness-95 contrast-125 group-hover:contrast-125"
+          />
+        </a>
+
+        <a
+          href={
+            competition === CompetitionType.TextGuided
+              ? match2Link
+              : targetCompetitionLink
+          }
+          target={
+            competition === CompetitionType.TextGuided
+              ? "_blank"
+              : ""
+          }
+          rel="noopener noreferrer"
+          className={`bg-white-50 touch-target group relative h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:scale-105 hover:shadow-md`}
+        >
+          <Image
+            src={getImagePath(match2Icon)}
+            alt="competition icon"
             fill
             className="transition-filter rounded-full object-cover brightness-95 contrast-125 group-hover:contrast-125"
           />
@@ -90,10 +151,10 @@ export default function Header() {
         <h1 className="text-left text-3xl font-semibold tracking-tight">
           {title}
           <a
-            href={basePath + targetValue.link}
+            href={basePath + targetDataTypeLink}
             className="ml-3 inline-flex items-center gap-1 rounded-md bg-blue-500 px-2 py-0.5 align-middle text-sm font-medium text-white transition-colors hover:bg-blue-400"
           >
-            {targetValue.titleValue}
+            {targetDataTypeTitle}
             <FaArrowRight className="ml-1 h-3 w-3" />
           </a>
         </h1>

@@ -3,9 +3,9 @@ import { DataType } from "@/types";
 
 export function useDataType() {
   const searchParams = useSearchParams();
-  const type = searchParams.get("type");
+  const data = searchParams.get("data");
   const dataType =
-    type === "core" ? DataType.CoreSet : DataType.AllData;
+    data === "core" ? DataType.CoreSet : DataType.AllData;
 
   return dataType;
 }

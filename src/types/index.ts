@@ -51,3 +51,8 @@ export enum DataType {
   AllData = "AllData",
   CoreSet = "CoreSet",
 }
+
+export enum CompetitionType {
+  Interactive = "5263",
+  TextGuided = "5651",
+}

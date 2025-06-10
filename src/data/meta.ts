@@ -7,7 +7,11 @@ const metaData = {
     icon: "images/favicon.ico",
     match: {
       icon: "/images/match_logo_1.jpg",
-      link: "https://github.com/JunMa11/CVPR-MedSegFMCompetition",
+      link: "https://www.codabench.org/competitions/5263/",
+    },
+    match2: {
+      icon: "/images/match_logo_2.png",
+      link: "https://www.codabench.org/competitions/5651/",
     },
     uoft: {
       icon: "/images/uoft.jpg",
@@ -17,18 +21,24 @@ const metaData = {
   github: {
     link: "https://github.com/JunMa11/CVPR-MedSegFMCompetition",
   },
+  competitionType: {
+    Interactive: {
+      titleValue: "Interactive",
+      link: "competition=5263",
+    },
+    TextGuided: {
+      titleValue: "Text-Guided",
+      link: "competition=5651",
+    },
+  },
   dataType: {
     core: {
       titleValue: "Coreset",
-      link: "/?type=core",
-      titleExtra:
-        ": Interactive Segmentation-Coreset Track",
+      link: "data=core",
     },
     all: {
       titleValue: "All Data",
-      link: "/?type=all",
-      titleExtra:
-        ": Interactive Segmentation-All Data Track",
+      link: "data=all",
     },
   },
 };
